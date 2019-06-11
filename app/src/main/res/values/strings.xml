@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <!-- App title and fragment titles -->
+    <string name="app_name">Natural Disaters</string>
+    <string name="share">Share</string>
+    <string name="detail_info">Detail Info</string>
+    <string name="hurricane">Hurricane</string>
+    <string name="earthquake">Earthquake</string>
+    <string name="flood">Flood</string>
+    <string name="volcano">Volcano</string>
+    <string name="thunderstorm">Thunderstorm</string>
+    <string name="rules">How to use</string>
+    <string name="about">About</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="rules_body">
+        This application is used for tracking and monitoring natural disater around the world. By using our application,
+        you will get the latest disater news, warning, information,...\n\nClicking overflow menu and choosing approriate
+        disater type you want to see. With offline mode support you can see results without Internet. Sound great?
+    </string>
+    <string name="about_body">
+        Natural disater is truly a fear of human. By developing Natual Disater app we want to give you the latest information
+        and warning so that anybody is aware of disaters happening in their country. We are looking forward for your feedback to improve
+        our service in the future. Feel free to ask us.\n\n\nThank You\n\n\nDeveloping Team
+    </string>
+</resources>

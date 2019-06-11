@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+                name="disater"
+                type="com.example.android.trackmysleepquality.domain.Disater" />
+        <variable
+                name="clickListener"
+                type="com.example.android.trackmysleepquality.adapter.NaturalDisaterListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:onClick="@{() -> clickListener.onClick(disater)}">
+
+        <TextView
+                android:id="@+id/disater_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/magnitude_circle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:disaterScore = "@{disater}"
+                tools:text="5" />
+
+        <TextView
+                android:id="@+id/disater_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                app:disaterTitle="@{disater}"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/disater_score"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Title1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

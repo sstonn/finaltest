@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/hurricane"
+            android:title="@string/hurricane"/>
+    <item
+            android:id="@+id/earthquake"
+            android:title="@string/earthquake"/>
+    <item
+            android:id="@+id/flood"
+            android:title="@string/flood"/>
+    <item
+            android:id="@+id/volcano"
+            android:title="@string/volcano"/>
+    <item
+            android:id="@+id/thunderstorm"
+            android:title="@string/thunderstorm"/>
+</menu>
