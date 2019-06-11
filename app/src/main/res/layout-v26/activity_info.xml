@@ -12,19 +12,21 @@
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-           >
+            >
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
         <TextView
                 android:id="@+id/disater_title"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:layout_marginVertical="20dp"
                 android:gravity="center"
-                android:textSize="20sp"
+                android:textSize="22sp"
+                android:textColor="#212121"
                 android:textStyle="bold"
                 android:ellipsize="end"
                 android:layout_marginHorizontal="20dp"
@@ -33,21 +35,22 @@
         <ImageView
                 android:id="@+id/disater_img"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="500dp"
                 android:layout_weight="6"
+                android:layout_marginHorizontal="20dp"
                 android:gravity="center"
                 tools:src="@tools:sample/backgrounds/scenic"/>
         <TextView
                 android:id="@+id/disater_country"
                 android:layout_width="wrap_content"
-                android:layout_height="0dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:textSize="20sp"
-                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
                 android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
                 tools:text="country"/>
-
-            <TextView
+        <TextView
                     android:id="@+id/disater_description"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
